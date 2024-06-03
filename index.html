@@ -1,3 +1,5 @@
+<!-- Toggle preview: ctrl+shift+v -->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,15 +8,869 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-        <link  rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body style="margin: 0;">
+    <body style="margin: 0; background-color: var(--background);">
 
-        <div>
-            Ibrahim Al-Akash GitHub Portfolio
+        <div class="topnav" id="myTopnav">
+            <a class="active" href="index.html">About Me</a>
+            <a href="#experience-preview-container">Experience</a>
+            <div class="dropdown">
+                <button class="dropbtn">Projects
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#starling-android">Starling Android</a>
+                  <a href="#urinator-3000">Urinator 3000</a>
+                  <a href="#bph-sensor">BPH Sensor</a>
+                  <a href="#autores-rig">Autoresuscitation Rig</a>
+                  <a href="#rice-planner">Rice Planner</a>
+                  <a href="#hemo">Hemodynamic Model</a>
+                  <a href="#oedk">Engineering Design Showcase</a>
+                  <a href="#mytourney">MyTourney</a>
+                  <a href="#max-health">Max Health</a>
+                </div>
+              </div>
+            <a href="#mini-projects">Mini-Projects</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i>&#9776;</i>
+            </a>
         </div>
 
+        <div class="name">
+            <span style="font-family: 'Logo'; color: light-dark(var(--machine-gray), var(--curiosity-white));">I</span><span style="font-family: 'Logo'; color: var(--big-brain-blue);">A</span><span style="font-family: 'Primary Header'; color: light-dark(var(--machine-gray), var(--curiosity-white));font-size: 64px;"> Ibrahim</span><span style="font-family: 'Primary Header'; color: var(--big-brain-blue);font-size: 64px;"> Al-Akash</span>  
+        </div>
+
+        <div id="welcome-container">
+            <span style='font-family: "Primary Header"; color: var(--big-brain-blue); font-size: 48px;'>Welcome to my development portfolio!</span>
+            <br>
+            I am pursuing a software engineering internship centered on systems, mobile, or web application development. I'm dedicated to contributing to a forward-thinking team while cultivating industry skills. With experience in both solo and team projects, I have a proven ability to learn quickly and build innovative solutions. I thrive on challenges and am committed to pushing my boundaries.
+
+        </div>
+
+        <div id="experience-preview-container">
+            <div class="home-section-header">Experience</div>
+            <div class="timeline">
+                <div class="milestone">
+                    <h3 class="title">Bioengineering Intern</h3>
+                    <div class="circle">
+                        <img src="images/companies/baylor_college_of_medicine.png" alt="Job 1">
+                    </div>
+                    <div class="date">Aug '22</div>
+                    <div class="company-name">BCM Ray Lab</div>
+                </div>
+                <div class="milestone">
+                    <h3 class="title">Product R&D Engineering Intern</h3>
+                    <div class="circle">
+                        <img src="images/companies/starling_medical.png" alt="Job 2">
+                    </div>
+                    <div class="date">May '23</div>
+                    <div class="company-name">Starling Medical</div>
+                </div>
+                <div class="milestone"> <!-- onclick="window.location.href='#'" -->
+                    <h3 class="title">Software Engineering Intern</h3>
+                    <div class="circle">
+                        <img src="images/companies/starling_medical.png" alt="Job 3">
+                    </div>
+                    <div class="date">May '24</div>
+                    <div class="company-name">Starling Medical</div>
+                </div>
+                <!-- Add more milestones as needed -->
+            </div>
+        </div>
+
+        <div class="home-section-header">
+            Projects
+        </div>
+
+        <!-- Starling Android-->
+
+        <div class="carousel-container" id="starling-android">
+
+            <div class="carousel" data-carousel>
+                <button class="carousel-btn prev" data-carousel-btn="prev">&#10094;</button>
+                <button class="carousel-btn next" data-carousel-btn="next">&#10095;</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="images/projects/Starling/android_app.png" alt="Android App Pages">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/Starling/android_app_graphs.png" alt="Android App Graphs">
+                    </li>
+                </ul>
+
+                <div class="proj-slide-overlay">
+                    <div class="proj-slide-overlay-content">
+                        <div class="proj-slide-info">
+                            <img src="images/companies/starling_medical.png" alt="Starling Logo" class="proj-logo">
+                            <div class="proj-name">Starling</div>
+                        </div>
+                        <div class="proj-overlay-vertical-line"></div>
+                        <div class="proj-slide-description">
+                            <p>Companion Android application for UrinDx UTI biosensor for remote patient monitoring (RPM)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 14rem">
+                    <img src="images/languages/kotlin_logo_white.png" class="proj-tag" alt="Kotlin">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 21rem">
+                    <img src="images/languages/aws_logo_white.png" class="proj-tag" alt="AWS">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 28rem">
+                    <img src="images/languages/python_logo_white.png" class="proj-tag" alt="C">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 35rem">
+                    <img src="images/languages/javascript_logo_white.png" class="proj-tag" alt="C">
+                </div>
+
+                <div class="proj-slide-tag-github" onclick="window.open('https://github.com/Ibrahim-2003/StarlingAndroidUI')">
+                    <img src="images/languages/github_logo_black.png" class="proj-tag" alt="GitHub">
+                </div>
+
+                <div class="proj-slide-link-btn">
+                    <a style="align-self: center; text-align: center; text-decoration: none; color: light-dark(var(--curiosity-white), var(--modern-black));" href="images/projects/Starling/Internship Lab Notebook.pdf" target="_blank">
+                        Read More
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Urinator 3000 -->
+
+        <div class="carousel-container" id="urinator-3000">
+
+            <div class="carousel" data-carousel>
+                <button class="carousel-btn prev" data-carousel-btn="prev">&#10094;</button>
+                <button class="carousel-btn next" data-carousel-btn="next">&#10095;</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="images/projects/Starling/urinator_circuit_box_drawing.png" alt="Urinator 3000 Circuit Box Drawing">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/Starling/urinator_pov.jpg" alt="Urinator 3000 POV">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/Starling/urinator_action.jpg" alt="Urinator 3000 in Action">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/Starling/urinator_circuit_box.jpg" alt="Urinator 3000 Circuit Box">
+                    </li>
+                </ul>
+
+                <div class="proj-slide-overlay">
+                    <div class="proj-slide-overlay-content">
+                        <div class="proj-slide-info">
+                            <img src="images/companies/starling_medical.png" alt="Starling Logo" class="proj-logo">
+                            <div class="proj-name">Starling</div>
+                        </div>
+                        <div class="proj-overlay-vertical-line"></div>
+                        <div class="proj-slide-description">
+                            <p>Urine simulator apparatus using an array of sensors and Arduino-controlled hardware for fatigue testing the UrinDx UTI biosensor simulating 48 hours of continuous urination
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 14rem">
+                    <img src="images/languages/c_logo_white.png" class="proj-tag" alt="C">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 21rem">
+                    <img src="images/languages/cpp_logo_white.png" class="proj-tag" alt="C++">
+                </div>
+
+                <div class="proj-slide-tag-github" onclick="window.open('https://github.com/Ibrahim-2003/Starling-Medical')">
+                    <img src="images/languages/github_logo_black.png" class="proj-tag" alt="GitHub">
+                </div>
+
+                <div class="proj-slide-link-btn">
+                    <a style="align-self: center; text-align: center; text-decoration: none; color: light-dark(var(--curiosity-white), var(--modern-black));" href="images/projects/Starling/Internship Lab Notebook.pdf" target="_blank">
+                        Read More
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- BPH Sensor -->
+
+        <div class="carousel-container" id="bph-sensor">
+
+            <div class="carousel" data-carousel>
+                <button class="carousel-btn prev" data-carousel-btn="prev">&#10094;</button>
+                <button class="carousel-btn next" data-carousel-btn="next">&#10095;</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="images/projects/Starling/mag_circuit.png" alt="BPH Magnetometer Circuit">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/Starling/mag_diagram.png" alt="BPH Magnetometer Circuit">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/Starling/mag_cad.png" alt="BPH Magnetometer Circuit">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/Starling/mag.jpg" alt="BPH Magnet">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/Starling/mag_data.png" alt="BPH Data">
+                    </li>
+                </ul>
+
+                <div class="proj-slide-overlay">
+                    <div class="proj-slide-overlay-content">
+                        <div class="proj-slide-info">
+                            <img src="images/companies/starling_medical.png" alt="Starling Logo" class="proj-logo">
+                            <div class="proj-name">Starling</div>
+                        </div>
+                        <div class="proj-overlay-vertical-line"></div>
+                        <div class="proj-slide-description">
+                            <p>Novel biosensor solution for remote benign prostate hyperplasia (BPH) detection 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 14rem">
+                    <img src="images/languages/c_logo_white.png" class="proj-tag" alt="C">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 21rem">
+                    <img src="images/languages/cpp_logo_white.png" class="proj-tag" alt="C++">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 28rem">
+                    <img src="images/languages/python_logo_white.png" class="proj-tag" alt="Python">
+                </div>
+
+                <div class="proj-slide-tag-github" onclick="window.open('https://github.com/Ibrahim-2003/Starling-Medical')">
+                    <img src="images/languages/github_logo_black.png" class="proj-tag" alt="GitHub">
+                </div>
+
+                <div class="proj-slide-link-btn">
+                    <a style="align-self: center; text-align: center; text-decoration: none; color: light-dark(var(--curiosity-white), var(--modern-black));" href="images/projects/Starling/Showcase.pdf" target="_blank">
+                        Read More
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Autores Rig -->
+        
+        <div class="carousel-container" id="autores-rig">
+            <div class="carousel" data-carousel>
+                <button class="carousel-btn prev" data-carousel-btn="prev">&#10094;</button>
+                <button class="carousel-btn next" data-carousel-btn="next">&#10095;</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="images/projects/Ray Lab/automation_rigs.jpeg" alt="Ray Lab Autores Rig">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/Ray Lab/autores_rig_drawing.png" alt="Ray Lab Autores Rig Drawing">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/Ray Lab/schematic.png" alt="Ray Lab Autores Circuit">
+                    </li>
+                </ul>
+
+                <div class="proj-slide-overlay">
+                    <div class="proj-slide-overlay-content">
+                        <div class="proj-slide-info">
+                            <img src="images/companies/baylor_college_of_medicine.png" alt="Ray Lab Logo" class="proj-logo">
+                            <div class="proj-name">Ray Lab</div>
+                        </div>
+                        <div class="proj-overlay-vertical-line"></div>
+                        <div class="proj-slide-description">
+                            <p>Apparatus for automating and parallelizing experiments on genetically engineered mice for sudden infant death syndrome (SIDS) research
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 14rem">
+                    <img src="images/languages/c_logo_white.png" class="proj-tag" alt="C">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 21rem">
+                    <img src="images/languages/cpp_logo_white.png" class="proj-tag" alt="C++">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 28rem">
+                    <img src="images/languages/python_logo_white.png" class="proj-tag" alt="Python">
+                </div>
+
+                <div class="proj-slide-tag-github" onclick="window.open('https://github.com/Ibrahim-2003/Ray-Lab')">
+                    <img src="images/languages/github_logo_black.png" class="proj-tag" alt="GitHub">
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Rice Planner -->
+
+        <div class="carousel-container" id="rice-planner">
+            <div class="carousel" data-carousel>
+                <button class="carousel-btn prev" data-carousel-btn="prev">&#10094;</button>
+                <button class="carousel-btn next" data-carousel-btn="next">&#10095;</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="images/projects/Rice Planner/Home Dashboard.png" alt="Rice Planner Home Dashboard">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/Rice Planner/Task List.png" alt="Assignment Tracker">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/Rice Planner/Google Calendar Integration.png" alt="Google Calendar Integration">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/Rice Planner/Course Page.png" alt="Course Page">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/Rice Planner/GPA Page.png" alt="GPA Page">
+                    </li>
+                </ul>
+
+                <div class="proj-slide-overlay">
+                    <div class="proj-slide-overlay-content">
+                        <div class="proj-slide-info">
+                            <img src="images/projects/Rice Planner/Rice Planner Logo.png" alt="Rice Planner Logo" class="proj-logo" style="width: 7rem;">
+                            <div class="proj-name">Rice Planner</div>
+                        </div>
+                        <div class="proj-overlay-vertical-line"></div>
+                        <div class="proj-slide-description">
+                            <p>Digital planner website (Rice Planner) for university students to aggregate all assignments, readings, and tasks for all classes on a centralized dashboard
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 14rem">
+                    <img src="images/languages/javascript_logo_white.png" class="proj-tag" alt="JavaScript">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 21rem">
+                    <img src="images/languages/html_logo_white.png" class="proj-tag" alt="HTML">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 28rem">
+                    <img src="images/languages/css_logo_white.png" class="proj-tag" alt="CSS" style="width: 1.75rem;">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 35rem">
+                    <img src="images/languages/mysql_logo_white.png" class="proj-tag" alt="MySQL">
+                </div>
+
+                <div class="proj-slide-tag-github" onclick="window.open('https://github.com/Ibrahim-2003/Rice-planner')">
+                    <img src="images/languages/github_logo_black.png" class="proj-tag" alt="GitHub">
+                </div>
+
+                <div class="proj-slide-link-btn">
+                    <a style="align-self: center; text-align: center; text-decoration: none; color: light-dark(var(--curiosity-white), var(--modern-black));" href="images/projects/Rice Planner/Engineering Entrepreneurship Slidedeck 11_30_2022.pdf" target="_blank">
+                        Read More
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Hemodynamic Model -->
+
+        <div class="carousel-container" id="hemo">
+            <div class="carousel" data-carousel>
+                <button class="carousel-btn prev" data-carousel-btn="prev">&#10094;</button>
+                <button class="carousel-btn next" data-carousel-btn="next">&#10095;</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="images/projects/Hemodynamic Model/hemodynamic-model.jpg" alt="Hemodynamic Banner">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/Hemodynamic Model/Circuit.png" alt="Hemodynamic Circuit">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/Hemodynamic Model/Blood Flow Results.png" alt="Hemodynamic Results">
+                    </li>
+                </ul>
+
+                <div class="proj-slide-overlay">
+                    <div class="proj-slide-overlay-content">
+                        <div class="proj-slide-info">
+                            <img src="images/companies/rice_university_logo.png" alt="Rice Logo" class="proj-logo" style="width: 5rem; margin-bottom: 0;">
+                            <div class="proj-name">Hemodynamic Model</div>
+                        </div>
+                        <div class="proj-overlay-vertical-line"></div>
+                        <div class="proj-slide-description">
+                            <p>Hemodynamic blood flow model simulating homeostasis and hemorrhagic shock conditions
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 14rem">
+                    <img src="images/languages/mathematica_logo_white.png" class="proj-tag" alt="Mathematica">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 21rem">
+                    <img src="images/languages/matlab_logo_white.png" class="proj-tag" alt="MATLAB">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 28rem">
+                    <img src="images/languages/python_logo_white.png" class="proj-tag" alt="Python">
+                </div>
+
+                <div class="proj-slide-tag-github" onclick="window.open('https://github.com/Ibrahim-2003/PBL-2-Blood-Simulator')">
+                    <img src="images/languages/github_logo_black.png" class="proj-tag" alt="GitHub">
+                </div>
+
+                <div class="proj-slide-link-btn">
+                    <a style="align-self: center; text-align: center; text-decoration: none; color: light-dark(var(--curiosity-white), var(--modern-black));" href="/images/projects/Hemodynamic Model/Hemorrhagic Shock Model Final.pdf" target="_blank">
+                        Read More
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- OEDK Display -->
+
+        <div class="carousel-container" id="oedk">
+            <div class="carousel" data-carousel>
+                <button class="carousel-btn prev" data-carousel-btn="prev">&#10094;</button>
+                <button class="carousel-btn next" data-carousel-btn="next">&#10095;</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="images/projects/OEDK Showcase/Showcase Display.jpg" alt="Rice Planner">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/OEDK Showcase/Rasperry Pi Server.jpg" alt="Ray Lab Autores Rig Drawing">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/OEDK Showcase/IoT Display Controller.jpg" alt="Rice Planner">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/OEDK Showcase/US Sensors.jpg" alt="Ray Lab Autores Rig Drawing">
+                    </li>
+                </ul>
+
+                <div class="proj-slide-overlay">
+                    <div class="proj-slide-overlay-content">
+                        <div class="proj-slide-info">
+                            <img src="images/companies/rice_university_logo.png" alt="Rice University Logo" class="proj-logo" style="width: 5rem; margin-bottom: 0;">
+                            <div class="proj-name">Rice Engineering</div>
+                        </div>
+                        <div class="proj-overlay-vertical-line"></div>
+                        <div class="proj-slide-description">
+                            <p>Physical data visualization display for the Rice Oshman Engineering Design Kitchen (OEDK) showcasing various datasets collected on users
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 14rem">
+                    <img src="images/languages/c_logo_white.png" class="proj-tag" alt="C">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 21rem">
+                    <img src="images/languages/cpp_logo_white.png" class="proj-tag" alt="C++">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 28rem">
+                    <img src="images/languages/python_logo_white.png" class="proj-tag" alt="Python">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 35rem">
+                    <img src="images/languages/javascript_logo_white.png" class="proj-tag" alt="JavaScript">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 42rem">
+                    <img src="images/languages/mysql_logo_white.png" class="proj-tag" alt="MySQL">
+                </div>
+
+                <div class="proj-slide-tag-github" onclick="window.open('https://github.com/Ibrahim-2003/Engineering-Design-Showcase')">
+                    <img src="images/languages/github_logo_black.png" class="proj-tag" alt="GitHub">
+                </div>
+
+                <div class="proj-slide-link-btn">
+                    <a style="align-self: center; text-align: center; text-decoration: none; color: light-dark(var(--curiosity-white), var(--modern-black));" href="images/projects/OEDK Showcase/Final Report.pdf" target="_blank">
+                        Read More
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- MyTourney -->
+
+        <div class="carousel-container" id="mytourney">
+            <div class="carousel" data-carousel>
+                <button class="carousel-btn prev" data-carousel-btn="prev">&#10094;</button>
+                <button class="carousel-btn next" data-carousel-btn="next">&#10095;</button>
+                <ul data-slides>
+                    <li class="slide" data-active>
+                        <img src="images/projects/MyTourney/Banner.png" alt="MyTourney Banner">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/MyTourney/Player Screens.png" alt="MyTourney Player Screens">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/MyTourney/Host Screens.png" alt="MyTourney Host Screens">
+                    </li>
+                </ul>
+
+                <div class="proj-slide-overlay">
+                    <div class="proj-slide-overlay-content">
+                        <div class="proj-slide-info">
+                            <img src="images/projects/MyTourney/MyTourney Logo Inverted.png" alt="MyTourney Logo" class="proj-logo" style="width: 7rem; margin-bottom: 0;">
+                            <div class="proj-name">MyTourney</div>
+                        </div>
+                        <div class="proj-overlay-vertical-line"></div>
+                        <div class="proj-slide-description">
+                            <p>Mobile web application (MyTourney) using Node.JS, MySQL, and Express for people to host and find soccer tournaments near them and win monetary prizes
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 14rem">
+                    <img src="images/languages/javascript_logo_white.png" class="proj-tag" alt="JavaScript">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 21rem">
+                    <img src="images/languages/mysql_logo_white.png" class="proj-tag" alt="MySQL">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 28rem">
+                    <img src="images/languages/python_logo_white.png" class="proj-tag" alt="Python">
+                </div>
+
+                <div class="proj-slide-tag-github" onclick="window.open('https://github.com/Ibrahim-2003/MyTourney')">
+                    <img src="images/languages/github_logo_black.png" class="proj-tag" alt="GitHub">
+                </div>
+
+                <div class="proj-slide-link-btn">
+                    <a style="align-self: center; text-align: center; text-decoration: none; color: light-dark(var(--curiosity-white), var(--modern-black));" href="/images/projects/MyTourney/MyTourney.pdf" target="_blank">
+                        Read More
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Max Health -->
+
+        <div class="carousel-container" id="max-health">
+            <div class="carousel" data-carousel>
+                <button class="carousel-btn prev" data-carousel-btn="prev">&#10094;</button>
+                <button class="carousel-btn next" data-carousel-btn="next">&#10095;</button>
+                <ul data-slides>
+                    <li class="slide" data-active="">
+                        <img src="images/projects/Max Health/Max Health Circuit Diagram.png" alt="Max Health Circuit" style="background-color: var(--curiosity-white);">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/Max Health/Max Health Textiles.png" alt="Max Health Textiles" style="background-color: var(--curiosity-white);">
+                    </li>
+                    <li class="slide">
+                        <img src="images/projects/Max Health/Max Health Application Suite.png" alt="Max Health Application Suite" style="background-color: var(--curiosity-white);">
+                    </li>
+                </ul>
+
+                <div class="proj-slide-overlay">
+                    <div class="proj-slide-overlay-content">
+                        <div class="proj-slide-info">
+                            <img src="images/projects/Max Health/Max Health Logo.png" alt="Max Health Logo" class="proj-logo" style="width: 4.5rem; margin-bottom: 0;">
+                            <div class="proj-name">Max Health</div>
+                        </div>
+                        <div class="proj-overlay-vertical-line"></div>
+                        <div class="proj-slide-description">
+                            <p>Novel smart textile biosensor system to monitor and alert the user of health anomalies including arrhythmias, dysglycemia, neurological diseases, and asthma attack risk
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 7rem">
+                    <img src="images/languages/c_logo_white.png" class="proj-tag" alt="C">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 14rem">
+                    <img src="images/languages/cpp_logo_white.png" class="proj-tag" alt="C++">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 21rem">
+                    <img src="images/languages/python_logo_white.png" class="proj-tag" alt="Python">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 28rem">
+                    <img src="images/languages/java_logo_white.png" class="proj-tag" alt="Java">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 35rem">
+                    <img src="images/languages/javascript_logo_white.png" class="proj-tag" alt="JavaScript">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 42rem">
+                    <img src="images/languages/html_logo_white.png" class="proj-tag" alt="HTML">
+                </div>
+
+                <div class="proj-slide-tag" style="background-color: var(--big-brain-blue); right: 49rem">
+                    <img src="images/languages/css_logo_white.png" class="proj-tag" alt="CSS" style="width: 1.75rem;">
+                </div>
+
+                <div class="proj-slide-link-btn">
+                    <a style="align-self: center; text-align: center; text-decoration: none; color: light-dark(var(--curiosity-white), var(--modern-black));" href="https://projectboard.world/isef2021/project/enbm013---max-health" target="_blank">
+                        Read More
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Mini Projects -->
+
+        <div class="home-section-header" style="margin-bottom: 4rem;" id="mini-projects">
+            Mini-Projects
+        </div>
+
+        <div class="mini-proj-container">
+
+            <div class="mini-proj-item" onclick="window.open('https://github.com/Ibrahim-2003/Backtester')">
+                <div class="mini-proj-img-cont">
+                    <img src="images/mini-projects/backtester.png">
+                </div>
+                <div class="mini-proj-text">
+                    <div class="mini-proj-title">
+                        Backtester
+                    </div>
+                    <div class="mini-proj-description">
+                        Tests stock trading strategies against historical data
+                    </div>
+                </div>
+            </div>
+
+            <div class="mini-proj-item" onclick="window.open('https://github.com/Ibrahim-2003/Chemistry-Calculator')">
+                <div class="mini-proj-img-cont">
+                    <img src="images/mini-projects/chemistry-calculator.jpeg">
+                </div>
+                <div class="mini-proj-text">
+                    <div class="mini-proj-title">
+                        Chemistry Calculator
+                    </div>
+                    <div class="mini-proj-description">
+                        Calculates molecular weight
+                    </div>
+                </div>
+            </div>
+
+            <div class="mini-proj-item" onclick="window.open('https://github.com/Ibrahim-2003/Google-Spreadsheet-Hour-Logger')">
+                <div class="mini-proj-img-cont">
+                    <img src="images/mini-projects/google-sheets.avif">
+                </div>
+                <div class="mini-proj-text">
+                    <div class="mini-proj-title">
+                        Google Spreadsheet Hour Log
+                    </div>
+                    <div class="mini-proj-description">
+                        Sends confirmation email for logged hours
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="mini-proj-item" onclick="window.open('https://github.com/Ibrahim-2003/Hill-Cypher')">
+                <div class="mini-proj-img-cont">
+                    <img src="images/mini-projects/hill-cypher.jpeg">
+                </div>
+                <div class="mini-proj-text">
+                    <div class="mini-proj-title">
+                        Hill Cypher
+                    </div>
+                    <div class="mini-proj-description">
+                        Practice deciphering Hill Cypher
+                    </div>
+                </div>
+            </div>
+
+            <div class="mini-proj-item" onclick="window.open('https://github.com/Ibrahim-2003/Investment-Sim')">
+                <div class="mini-proj-img-cont">
+                    <img src="images/mini-projects/investment-sim.jpg">
+                </div>
+                <div class="mini-proj-text">
+                    <div class="mini-proj-title">
+                        Investment Simulator
+                    </div>
+                    <div class="mini-proj-description">
+                        Calculates income from simulated investments
+                    </div>
+                </div>
+            </div>
+
+            <div class="mini-proj-item" onclick="window.open('https://github.com/Ibrahim-2003/IP-Changer')">
+                <div class="mini-proj-img-cont">
+                    <img src="images/mini-projects/ip-changer.jpg">
+                </div>
+                <div class="mini-proj-text">
+                    <div class="mini-proj-title">
+                        IP Changer
+                    </div>
+                    <div class="mini-proj-description">
+                        Changes IP address using Tor
+                    </div>
+                </div>
+            </div>
+
+            <div class="mini-proj-item" onclick="window.open('https://github.com/Ibrahim-2003/Parallel-Resistor-Calculator')">
+                <div class="mini-proj-img-cont">
+                    <img src="images/mini-projects/parallel-resistors.jpeg">
+                </div>
+                <div class="mini-proj-text">
+                    <div class="mini-proj-title">
+                        Parallel Resistors Calculator
+                    </div>
+                    <div class="mini-proj-description">
+                        Calculates equivalent resistance of parallel resistors
+                    </div>
+                </div>
+            </div>
+
+            <div class="mini-proj-item" onclick="window.open('https://github.com/Ibrahim-2003/PBS-Challenge')">
+                <div class="mini-proj-img-cont">
+                    <img src="images/mini-projects/pbs-challenge.jpg">
+                </div>
+                <div class="mini-proj-text">
+                    <div class="mini-proj-title">
+                        PBS KEDT Challenge
+                    </div>
+                    <div class="mini-proj-description">
+                        Unity game based on PBS KEDT Challenge! quiz show
+                    </div>
+                </div>
+            </div>
+
+            <div class="mini-proj-item" onclick="window.open('https://github.com/Ibrahim-2003/Satellite-Imager')">
+                <div class="mini-proj-img-cont">
+                    <img src="images/mini-projects/satellite-imager.png">
+                </div>
+                <div class="mini-proj-text">
+                    <div class="mini-proj-title">
+                        Satellite Imager
+                    </div>
+                    <div class="mini-proj-description">
+                        Scrapes satellite image data from Google Earth
+                    </div>
+                </div>
+            </div>
+
+            <div class="mini-proj-item" onclick="window.open('https://github.com/Ibrahim-2003/Stock-Scraper')">
+                <div class="mini-proj-img-cont">
+                    <img src="images/mini-projects/stock-scraper.jpg">
+                </div>
+                <div class="mini-proj-text">
+                    <div class="mini-proj-title">
+                        Stock Scraper
+                    </div>
+                    <div class="mini-proj-description">
+                        Scrapes real-time stock price given ticker
+                    </div>
+                </div>
+            </div>
+
+            <div class="mini-proj-item" onclick="window.open('https://github.com/Ibrahim-2003/Symptom-Scraper')">
+                <div class="mini-proj-img-cont">
+                    <img src="images/mini-projects/symptom-scraper.jpeg">
+                </div>
+                <div class="mini-proj-text">
+                    <div class="mini-proj-title">
+                        Symptom Scraper
+                    </div>
+                    <div class="mini-proj-description">
+                        Scrapes data about diseases
+                    </div>
+                </div>
+            </div>
+
+            <div class="mini-proj-item" onclick="window.open('https://github.com/Ibrahim-2003/YouTube-Downloader')">
+                <div class="mini-proj-img-cont">
+                    <img src="images/mini-projects/youtube-downloader.jpg">
+                </div>
+                <div class="mini-proj-text">
+                    <div class="mini-proj-title">
+                        YouTube Downloader
+                    </div>
+                    <div class="mini-proj-description">
+                        Downloads YouTube videos as MP4 or MP3 files
+                    </div>
+                </div>
+            </div>
+
+            <div class="mini-proj-item" onclick="window.open('https://github.com/Ibrahim-2003/Bridge-Project')">
+                <div class="mini-proj-img-cont">
+                    <img src="images/mini-projects/bridge-project.png">
+                </div>
+                <div class="mini-proj-text">
+                    <div class="mini-proj-title">
+                        Bridge Project
+                    </div>
+                    <div class="mini-proj-description">
+                        MATLAB simulation of bridge deformation
+                    </div>
+                </div>
+            </div>
+
+            <div class="mini-proj-item" onclick="window.open('https://github.com/Ibrahim-2003/Resume-Maker')">
+                <div class="mini-proj-img-cont">
+                    <img src="images/mini-projects/resume-maker.jpeg">
+                </div>
+                <div class="mini-proj-text">
+                    <div class="mini-proj-title">
+                        Resume Maker
+                    </div>
+                    <div class="mini-proj-description">
+                        Python resume generator
+                    </div>
+                </div>
+            </div>
+
+            <div class="mini-proj-item" onclick="window.open('https://github.com/Ibrahim-2003/Rocket')">
+                <div class="mini-proj-img-cont">
+                    <img src="images/mini-projects/rocket-ignition.jpeg">
+                </div>
+                <div class="mini-proj-text">
+                    <div class="mini-proj-title">
+                        Rocket Ignition
+                    </div>
+                    <div class="mini-proj-description">
+                        Arduino-controlled remote rocket ignition system
+                    </div>
+                </div>
+            </div>
+
+            <div class="mini-proj-item" onclick="window.open('https://github.com/Ibrahim-2003/Rocket-Simulator')">
+                <div class="mini-proj-img-cont">
+                    <img src="images/mini-projects/rocket-sim.webp">
+                </div>
+                <div class="mini-proj-text">
+                    <div class="mini-proj-title">
+                        Rocket Model
+                    </div>
+                    <div class="mini-proj-description">
+                        Simulates rocket trajectory
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        
+
+        <script src="scripts.js"></script>
     </body>
 </html>
