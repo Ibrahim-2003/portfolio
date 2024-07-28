@@ -49,7 +49,7 @@
   line-height: 50px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   #welcome-container {
     font-size: 14px;
     line-height: 25px;
@@ -294,7 +294,7 @@
   font-size: 64px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .name {
     font-family: "Primary Header";
     color: var(--big-brain-blue);
@@ -352,7 +352,7 @@
   margin-top: 1rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .home-section-header {
     font-family: "Primary Header";
     font-size: 36px;
@@ -696,7 +696,7 @@
   height: auto;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .carousel-container {
     margin-top: 6rem;
     margin-bottom: 7rem;
@@ -938,7 +938,7 @@
   justify-items: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .mini-proj-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
