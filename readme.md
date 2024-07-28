@@ -1,16 +1,6 @@
 # Ibrahim Al-Akash Engineering Portfolio
 
 
-'''
-// Change picture according to dark/light mode screen
-<picture>
-  <!-- User prefers light mode: -->
-  <source srcset="light.png" media="(prefers-color-scheme: light)"/>
+This is my resume website showcasing my experience, projects, and mini-projects.
 
-  <!-- User prefers dark mode: -->
-  <source srcset="dark.png"  media="(prefers-color-scheme: dark)"/>
-
-  <!-- User has no color preference: -->
-  <img src="light.png"/>
-</picture>
-'''
+![image](images/profile.jpeg)
